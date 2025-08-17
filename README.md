@@ -1,40 +1,56 @@
-# Customer segmentation
+# Customer Segmentation
 
-### The customer segmentation based on RFM method and K-Means clustering
+## Overview
+This project focuses on **customer segmentation** using the **RFM method** combined with **K-Means clustering**.  
+The dataset includes retail sales data spanning three years, sourced from Kaggle.  
+Two approaches to segmentation were implemented:
 
-## General info
-The project contains two methods of customer segmentation by combining the RFM method and K-Means clustering. The dataset includes sample sales data based on retail analytics. The analysis was performed in two approaches:
-- **the first** one uses RFM scoring (assigned RFM score) and K-means clustering;
-- **the second** raw calculated RFM variables and K-means clustering.
+1. **RFM scoring (assigned RFM score) + K-Means clustering**  
+2. **Raw RFM variables + K-Means clustering**
 
-### Dataset
-The dataset includes sample sales data based on retail analytics and contains three years of sales. It comes from Kaggle and can be find [here](https://www.kaggle.com/kyanyoga/sample-sales-data).
+---
+
+## Dataset
+- The dataset contains **sample sales data** based on retail analytics.  
+- Covers **three years of sales history**.  
+- Source: [Kaggle](https://www.kaggle.com/)  
+
+---
 
 ## Motivation
-The customer segmentation is an effective method that enables to get better know clients and to better correspond their various needs. 
-Almost every company that sells products or services stores data of shopping. This type of data can be used to execute customer segmentation thus the results of the analysis can be translated into marketing campaigns to increase sales. One of the most widely used techniques is RFM analysis, which allows to create personalized special offers to improve sales. 
+Customer segmentation is an effective method for understanding clients and addressing their varied needs.  
+Almost every company storing purchase data can leverage it to:  
+- Execute customer segmentation  
+- Design **personalized marketing campaigns**  
+- **Increase sales performance**  
 
-**RFM** stands for Recency, Frequency, Monetary Value and it is the technique of customer segmentation based on their transaction history. The RFM analysis is based on three criterias which measure different customer characteristics:
-- Recency: Days since last purchase/order of the client;
-- Frequency: Total number of purchases the customer were made;
-- Monetary Value: Total money the customer spent per order.
+One of the most widely used approaches is **RFM analysis**, which helps design special offers tailored to customer behavior.
 
-## Project contains:
-- **Part 1**: First approach - **Customer_segmentation.ipynb**
-- **Part 2**: Second approach - **Segmentation_Kmeans.ipynb**
-- Python script with customer segmentation - **customers_segments.py**
+### RFM Method
+RFM stands for **Recency, Frequency, Monetary Value**, and segments customers based on transaction history:
+
+- **Recency** – Days since the customer’s last purchase/order  
+- **Frequency** – Total number of purchases made by the customer  
+- **Monetary Value** – Total money the customer spent per order  
+
+---
+
+## Project Contents
+- **Part 1**: First approach – `Customer_segmentation.ipynb`  
+- **Part 2**: Second approach – `Segmentation_Kmeans.ipynb`  
+- **Python Script**: `customers_segments.py`  
+
+---
 
 ## Technologies
+- **Python 3.6**  
+- Libraries: `pandas`, `numpy`, `sklearn`, `scipy`, `seaborn`, `matplotlib`  
 
-The project is created with:
+---
 
-- Python 3.6
-- libraries: pandas, numpy, sklearn, scipy, seaborn, matplotlib.
+## Running the Project
+You can run this project using **Jupyter Notebook** or **Google Colab**.  
 
-**Running the project:**
-
-To run this project use Jupyter Notebook or Google Colab.
-
-You can run the scripts in the terminal:
-
-    customers_segments.py
+Alternatively, run the script in the terminal:  
+```bash
+python customers_segments.py
